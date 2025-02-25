@@ -1,0 +1,840 @@
+{
+  "stats": {
+    "count": 54,
+    "avgPricePerRoom": 20.64814814814815
+  },
+  "hostRanking": [
+    {
+      "host_id": "1",
+      "count": 20
+    },
+    {
+      "host_id": "3",
+      "count": 14
+    },
+    {
+      "host_id": "2",
+      "count": 13
+    },
+    {
+      "host_id": "694377",
+      "count": 11
+    },
+    {
+      "host_id": "4",
+      "count": 10
+    },
+    {
+      "host_id": "22267033",
+      "count": 10
+    },
+    {
+      "host_id": "6",
+      "count": 8
+    },
+    {
+      "host_id": "457",
+      "count": 8
+    },
+    {
+      "host_id": "351395739",
+      "count": 7
+    },
+    {
+      "host_id": "216682",
+      "count": 6
+    },
+    {
+      "host_id": "1892430",
+      "count": 6
+    },
+    {
+      "host_id": "91333416",
+      "count": 6
+    },
+    {
+      "host_id": "303118342",
+      "count": 6
+    },
+    {
+      "host_id": "480237365",
+      "count": 6
+    },
+    {
+      "host_id": "1032643",
+      "count": 5
+    },
+    {
+      "host_id": "26653520",
+      "count": 5
+    },
+    {
+      "host_id": "656545829",
+      "count": 5
+    },
+    {
+      "host_id": "25",
+      "count": 4
+    },
+    {
+      "host_id": "38",
+      "count": 4
+    },
+    {
+      "host_id": "47",
+      "count": 4
+    },
+    {
+      "host_id": "64",
+      "count": 4
+    },
+    {
+      "host_id": "68",
+      "count": 4
+    },
+    {
+      "host_id": "1208533",
+      "count": 4
+    },
+    {
+      "host_id": "652657760",
+      "count": 4
+    },
+    {
+      "host_id": "5",
+      "count": 3
+    },
+    {
+      "host_id": "7",
+      "count": 3
+    },
+    {
+      "host_id": "8",
+      "count": 3
+    },
+    {
+      "host_id": "9",
+      "count": 3
+    },
+    {
+      "host_id": "12",
+      "count": 3
+    },
+    {
+      "host_id": "204441",
+      "count": 3
+    },
+    {
+      "host_id": "107082058",
+      "count": 3
+    },
+    {
+      "host_id": "150732464",
+      "count": 3
+    },
+    {
+      "host_id": "14",
+      "count": 2
+    },
+    {
+      "host_id": "21",
+      "count": 2
+    },
+    {
+      "host_id": "329072",
+      "count": 2
+    },
+    {
+      "host_id": "576273",
+      "count": 2
+    },
+    {
+      "host_id": "875221",
+      "count": 2
+    },
+    {
+      "host_id": "6229402",
+      "count": 2
+    },
+    {
+      "host_id": "6683937",
+      "count": 2
+    },
+    {
+      "host_id": "24708935",
+      "count": 2
+    },
+    {
+      "host_id": "151399600",
+      "count": 2
+    },
+    {
+      "host_id": "151524034",
+      "count": 2
+    },
+    {
+      "host_id": "250109940",
+      "count": 2
+    },
+    {
+      "host_id": "354452046",
+      "count": 2
+    },
+    {
+      "host_id": "596595499",
+      "count": 2
+    },
+    {
+      "host_id": "13",
+      "count": 1
+    },
+    {
+      "host_id": "17",
+      "count": 1
+    },
+    {
+      "host_id": "20",
+      "count": 1
+    },
+    {
+      "host_id": "31",
+      "count": 1
+    },
+    {
+      "host_id": "43",
+      "count": 1
+    },
+    {
+      "host_id": "50",
+      "count": 1
+    },
+    {
+      "host_id": "57",
+      "count": 1
+    },
+    {
+      "host_id": "66",
+      "count": 1
+    },
+    {
+      "host_id": "123",
+      "count": 1
+    },
+    {
+      "host_id": "4883",
+      "count": 1
+    },
+    {
+      "host_id": "36752",
+      "count": 1
+    },
+    {
+      "host_id": "43806",
+      "count": 1
+    },
+    {
+      "host_id": "44565",
+      "count": 1
+    },
+    {
+      "host_id": "112300",
+      "count": 1
+    },
+    {
+      "host_id": "172460",
+      "count": 1
+    },
+    {
+      "host_id": "178043",
+      "count": 1
+    },
+    {
+      "host_id": "383029",
+      "count": 1
+    },
+    {
+      "host_id": "580125",
+      "count": 1
+    },
+    {
+      "host_id": "580606",
+      "count": 1
+    },
+    {
+      "host_id": "657327",
+      "count": 1
+    },
+    {
+      "host_id": "704593",
+      "count": 1
+    },
+    {
+      "host_id": "914858",
+      "count": 1
+    },
+    {
+      "host_id": "1229762",
+      "count": 1
+    },
+    {
+      "host_id": "1257145",
+      "count": 1
+    },
+    {
+      "host_id": "1294504",
+      "count": 1
+    },
+    {
+      "host_id": "1338515",
+      "count": 1
+    },
+    {
+      "host_id": "1467308",
+      "count": 1
+    },
+    {
+      "host_id": "1642946",
+      "count": 1
+    },
+    {
+      "host_id": "1717251",
+      "count": 1
+    },
+    {
+      "host_id": "1867205",
+      "count": 1
+    },
+    {
+      "host_id": "2028540",
+      "count": 1
+    },
+    {
+      "host_id": "2242443",
+      "count": 1
+    },
+    {
+      "host_id": "2343138",
+      "count": 1
+    },
+    {
+      "host_id": "2728513",
+      "count": 1
+    },
+    {
+      "host_id": "2872169",
+      "count": 1
+    },
+    {
+      "host_id": "2929454",
+      "count": 1
+    },
+    {
+      "host_id": "2993432",
+      "count": 1
+    },
+    {
+      "host_id": "3676663",
+      "count": 1
+    },
+    {
+      "host_id": "3895812",
+      "count": 1
+    },
+    {
+      "host_id": "3970671",
+      "count": 1
+    },
+    {
+      "host_id": "3977854",
+      "count": 1
+    },
+    {
+      "host_id": "4098517",
+      "count": 1
+    },
+    {
+      "host_id": "4146570",
+      "count": 1
+    },
+    {
+      "host_id": "4171106",
+      "count": 1
+    },
+    {
+      "host_id": "4284291",
+      "count": 1
+    },
+    {
+      "host_id": "4292831",
+      "count": 1
+    },
+    {
+      "host_id": "4344649",
+      "count": 1
+    },
+    {
+      "host_id": "4430565",
+      "count": 1
+    },
+    {
+      "host_id": "4605418",
+      "count": 1
+    },
+    {
+      "host_id": "4808354",
+      "count": 1
+    },
+    {
+      "host_id": "5339335",
+      "count": 1
+    },
+    {
+      "host_id": "5539889",
+      "count": 1
+    },
+    {
+      "host_id": "5708168",
+      "count": 1
+    },
+    {
+      "host_id": "5856708",
+      "count": 1
+    },
+    {
+      "host_id": "5864730",
+      "count": 1
+    },
+    {
+      "host_id": "6062018",
+      "count": 1
+    },
+    {
+      "host_id": "6179457",
+      "count": 1
+    },
+    {
+      "host_id": "6341636",
+      "count": 1
+    },
+    {
+      "host_id": "6372467",
+      "count": 1
+    },
+    {
+      "host_id": "6390702",
+      "count": 1
+    },
+    {
+      "host_id": "6531356",
+      "count": 1
+    },
+    {
+      "host_id": "6703252",
+      "count": 1
+    },
+    {
+      "host_id": "6789170",
+      "count": 1
+    },
+    {
+      "host_id": "7474254",
+      "count": 1
+    },
+    {
+      "host_id": "8177674",
+      "count": 1
+    },
+    {
+      "host_id": "8577866",
+      "count": 1
+    },
+    {
+      "host_id": "8663067",
+      "count": 1
+    },
+    {
+      "host_id": "8926166",
+      "count": 1
+    },
+    {
+      "host_id": "10281286",
+      "count": 1
+    },
+    {
+      "host_id": "10885165",
+      "count": 1
+    },
+    {
+      "host_id": "11111526",
+      "count": 1
+    },
+    {
+      "host_id": "11145191",
+      "count": 1
+    },
+    {
+      "host_id": "11341943",
+      "count": 1
+    },
+    {
+      "host_id": "11818658",
+      "count": 1
+    },
+    {
+      "host_id": "14518425",
+      "count": 1
+    },
+    {
+      "host_id": "16921283",
+      "count": 1
+    },
+    {
+      "host_id": "20153147",
+      "count": 1
+    },
+    {
+      "host_id": "20536324",
+      "count": 1
+    },
+    {
+      "host_id": "20917748",
+      "count": 1
+    },
+    {
+      "host_id": "21659291",
+      "count": 1
+    },
+    {
+      "host_id": "22742594",
+      "count": 1
+    },
+    {
+      "host_id": "23195770",
+      "count": 1
+    },
+    {
+      "host_id": "26324191",
+      "count": 1
+    },
+    {
+      "host_id": "26762692",
+      "count": 1
+    },
+    {
+      "host_id": "26857128",
+      "count": 1
+    },
+    {
+      "host_id": "27142405",
+      "count": 1
+    },
+    {
+      "host_id": "28133977",
+      "count": 1
+    },
+    {
+      "host_id": "31764728",
+      "count": 1
+    },
+    {
+      "host_id": "32907639",
+      "count": 1
+    },
+    {
+      "host_id": "32937427",
+      "count": 1
+    },
+    {
+      "host_id": "33511564",
+      "count": 1
+    },
+    {
+      "host_id": "36992501",
+      "count": 1
+    },
+    {
+      "host_id": "37277872",
+      "count": 1
+    },
+    {
+      "host_id": "38755455",
+      "count": 1
+    },
+    {
+      "host_id": "39655178",
+      "count": 1
+    },
+    {
+      "host_id": "39906013",
+      "count": 1
+    },
+    {
+      "host_id": "43450944",
+      "count": 1
+    },
+    {
+      "host_id": "46937755",
+      "count": 1
+    },
+    {
+      "host_id": "48647181",
+      "count": 1
+    },
+    {
+      "host_id": "49677849",
+      "count": 1
+    },
+    {
+      "host_id": "50402335",
+      "count": 1
+    },
+    {
+      "host_id": "51152729",
+      "count": 1
+    },
+    {
+      "host_id": "51659350",
+      "count": 1
+    },
+    {
+      "host_id": "53358593",
+      "count": 1
+    },
+    {
+      "host_id": "55608305",
+      "count": 1
+    },
+    {
+      "host_id": "56398946",
+      "count": 1
+    },
+    {
+      "host_id": "57068872",
+      "count": 1
+    },
+    {
+      "host_id": "57462983",
+      "count": 1
+    },
+    {
+      "host_id": "59607035",
+      "count": 1
+    },
+    {
+      "host_id": "65006426",
+      "count": 1
+    },
+    {
+      "host_id": "69534741",
+      "count": 1
+    },
+    {
+      "host_id": "74125906",
+      "count": 1
+    },
+    {
+      "host_id": "79165998",
+      "count": 1
+    },
+    {
+      "host_id": "79900817",
+      "count": 1
+    },
+    {
+      "host_id": "81597039",
+      "count": 1
+    },
+    {
+      "host_id": "83070034",
+      "count": 1
+    },
+    {
+      "host_id": "88602439",
+      "count": 1
+    },
+    {
+      "host_id": "96092167",
+      "count": 1
+    },
+    {
+      "host_id": "99058976",
+      "count": 1
+    },
+    {
+      "host_id": "103884979",
+      "count": 1
+    },
+    {
+      "host_id": "104559424",
+      "count": 1
+    },
+    {
+      "host_id": "130007762",
+      "count": 1
+    },
+    {
+      "host_id": "131200418",
+      "count": 1
+    },
+    {
+      "host_id": "143771308",
+      "count": 1
+    },
+    {
+      "host_id": "152363421",
+      "count": 1
+    },
+    {
+      "host_id": "157059672",
+      "count": 1
+    },
+    {
+      "host_id": "158369175",
+      "count": 1
+    },
+    {
+      "host_id": "191314376",
+      "count": 1
+    },
+    {
+      "host_id": "203065170",
+      "count": 1
+    },
+    {
+      "host_id": "218110608",
+      "count": 1
+    },
+    {
+      "host_id": "229170151",
+      "count": 1
+    },
+    {
+      "host_id": "230265204",
+      "count": 1
+    },
+    {
+      "host_id": "231021347",
+      "count": 1
+    },
+    {
+      "host_id": "242851604",
+      "count": 1
+    },
+    {
+      "host_id": "253957671",
+      "count": 1
+    },
+    {
+      "host_id": "258888870",
+      "count": 1
+    },
+    {
+      "host_id": "268406323",
+      "count": 1
+    },
+    {
+      "host_id": "281939482",
+      "count": 1
+    },
+    {
+      "host_id": "337463587",
+      "count": 1
+    },
+    {
+      "host_id": "350864458",
+      "count": 1
+    },
+    {
+      "host_id": "365002350",
+      "count": 1
+    },
+    {
+      "host_id": "366941113",
+      "count": 1
+    },
+    {
+      "host_id": "374816333",
+      "count": 1
+    },
+    {
+      "host_id": "397360612",
+      "count": 1
+    },
+    {
+      "host_id": "403782243",
+      "count": 1
+    },
+    {
+      "host_id": "440903240",
+      "count": 1
+    },
+    {
+      "host_id": "446820235",
+      "count": 1
+    },
+    {
+      "host_id": "457152913",
+      "count": 1
+    },
+    {
+      "host_id": "469250438",
+      "count": 1
+    },
+    {
+      "host_id": "473390516",
+      "count": 1
+    },
+    {
+      "host_id": "483840645",
+      "count": 1
+    },
+    {
+      "host_id": "485721712",
+      "count": 1
+    },
+    {
+      "host_id": "497159635",
+      "count": 1
+    },
+    {
+      "host_id": "504908228",
+      "count": 1
+    },
+    {
+      "host_id": "516733413",
+      "count": 1
+    },
+    {
+      "host_id": "543180975",
+      "count": 1
+    },
+    {
+      "host_id": "544670372",
+      "count": 1
+    },
+    {
+      "host_id": "546717792",
+      "count": 1
+    },
+    {
+      "host_id": "566546120",
+      "count": 1
+    },
+    {
+      "host_id": "596564227",
+      "count": 1
+    },
+    {
+      "host_id": "597030576",
+      "count": 1
+    },
+    {
+      "host_id": "652993442",
+      "count": 1
+    },
+    {
+      "host_id": "662542808",
+      "count": 1
+    }
+  ]
+}
