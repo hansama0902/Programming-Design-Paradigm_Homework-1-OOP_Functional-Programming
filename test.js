@@ -42,14 +42,19 @@ const computeStatistics = (filteredListings) => {
     return { count, avgPricePerRoom };
 };
 
-const rankHostsByListings = (listings) =>
-    Object.entries(listings.reduce((acc, { host_id }) => {
+const rankHostsByListings = (filteredListings) => {
+    const hostCount = filteredListings.reduce((acc, { host_id }) => {
         acc[host_id] = (acc[host_id] || 0) + 1;
         return acc;
-    }, {}))
-    .sort((a, b) => b[1] - a[1])
-    .slice(0, 10)
-    .map(([host_id, count]) => ({ host_id, count }));
+    }, {});
+    
+    console.log("Debug: Filtered host count", hostCount['107434423']); // Debugging Output
+    
+    return Object.entries(hostCount)
+        .sort((a, b) => b[1] - a[1])
+        .map(([host_id, count]) => ({ host_id, count }))
+        .slice(0, 10);
+};
 
 const exportResults = async (filePath, data) => {
     try {
@@ -90,6 +95,7 @@ const main = async () => {
 };
 
 main();
+
 
 
 
