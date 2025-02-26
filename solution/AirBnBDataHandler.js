@@ -37,15 +37,28 @@ import { stringify } from "csv-stringify/sync";
 async function loadListings(filePath) {
   try {
     const data = await fs.readFile(filePath, "utf8");
-    const records = parse(data, { columns: true, skip_empty_lines: true, trim: true });
+    const records = parse(data, {
+      columns: true,
+      skip_empty_lines: true,
+      trim: true,
+    });
 
-    return records.map((listing) => ({
-      ...listing,
-      price: listing.price ? parseFloat(listing.price.replace(/[^0-9.]/g, "")) || 0 : 0,
-      accommodates: parseInt(listing.accommodates) || 1,
-      review_scores_rating: listing.review_scores_rating ? parseFloat(listing.review_scores_rating) || 0 : 0,
-      host_id: listing.host_id && /^[0-9]+$/.test(listing.host_id) ? listing.host_id.trim() : null,
-    })).filter((listing) => listing.host_id);
+    return records
+      .map((listing) => ({
+        ...listing,
+        price: listing.price
+          ? parseFloat(listing.price.replace(/[^0-9.]/g, "")) || 0
+          : 0,
+        accommodates: parseInt(listing.accommodates) || 1,
+        review_scores_rating: listing.review_scores_rating
+          ? parseFloat(listing.review_scores_rating) || 0
+          : 0,
+        host_id:
+          listing.host_id && /^[0-9]+$/.test(listing.host_id)
+            ? listing.host_id.trim()
+            : null,
+      }))
+      .filter((listing) => listing.host_id);
   } catch (error) {
     console.error("Error reading file:", error);
     throw error;
@@ -138,7 +151,7 @@ function AirBnBDataHandler(listings) {
      */
     getData() {
       return { filteredRecords, stats, topHosts };
-    }
+    },
   };
 
   return handler;
@@ -155,7 +168,8 @@ function createFilterFunction(criteria) {
     (criteria.maxPrice == null || listing.price <= criteria.maxPrice) &&
     (criteria.minRooms == null || listing.accommodates >= criteria.minRooms) &&
     (criteria.maxRooms == null || listing.accommodates <= criteria.maxRooms) &&
-    (criteria.minReviewScore == null || listing.review_scores_rating >= criteria.minReviewScore);
+    (criteria.minReviewScore == null ||
+      listing.review_scores_rating >= criteria.minReviewScore);
 }
 
 /**
@@ -167,18 +181,18 @@ function computeStatistics(listings) {
   const validListings = listings.filter((listing) => listing.price > 0);
   const total_count = listings.length;
   const count = validListings.length;
-  const totalRoomPrice = validListings.reduce((acc, listing) => acc + listing.price / listing.accommodates, 0);
+  const totalRoomPrice = validListings.reduce(
+    (acc, listing) => acc + listing.price / listing.accommodates,
+    0,
+  );
   const avgPricePerRoom = count ? totalRoomPrice / count : 0;
-  const totalPriceValidListings = validListings.reduce((acc, listing) => acc + listing.price, 0);
+  const totalPriceValidListings = validListings.reduce(
+    (acc, listing) => acc + listing.price,
+    0,
+  );
   const avgPriceValidListings = count ? totalPriceValidListings / count : 0;
 
   return { total_count, count, avgPricePerRoom, avgPriceValidListings };
 }
 
 export { loadListings, AirBnBDataHandler };
-
-
-
-
-
-
