@@ -128,7 +128,17 @@ console.log(double(5)); // Output: 10
 ```
 
 The non-higher-order function is less reusable compared to the first example.
+  
+## Using GenAI
 
+Describes clearly how the project was created and what tools were used to support the process. If using GenAI, describes prompts used, how the answers were debugged, and what was learned from the process.
+
+This project utilized ChatGPT 4o for various stages of development:
+
+1. **Generating JSDoc Documentation**: ChatGPT 4o was used to generate JSDoc comments. However, running `node_modules/jsdoc/jsdoc.js` resulted in errors. The errors were analyzed, and the JSDoc was modified accordingly to resolve the issues.
+2. **Understanding and Implementing Method Chaining**: Initially, ChatGPT 4o was consulted to understand method chaining and adapt the code to use it. However, the initial implementation did not align with Functional Programming principles, leading to a manual restructuring of functions.
+3. **Learning About Pure Functions**: ChatGPT 4o provided examples of pure functions, which helped in understanding their properties. Using these examples, counterexamples were also constructed to illustrate impure functions.
+  
 ## Creative Addition
 
 1. All `price` and `review_scores_rating` values that are empty are assigned a default value of `0`. This ensures they are included in searches. Initially, these listings were skipped, which caused inaccuracies. Note that when setting a minimum value, the range starts from `1`.
