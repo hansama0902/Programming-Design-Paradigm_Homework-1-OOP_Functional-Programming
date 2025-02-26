@@ -6,6 +6,9 @@ This project provides a command-line tool for filtering, analyzing, and exportin
 
 The system is built using Node.js with ES6 modules and follows functional programming principles, using pure functions, higher-order functions, and method chaining.
 
+## Author
+**Shuhan Dong**
+
 ## Features
 
 - Load CSV data dynamically – Users specify the CSV file path at runtime
@@ -17,23 +20,27 @@ The system is built using Node.js with ES6 modules and follows functional progra
 - Command-line UI – Interact with the system via terminal
 
 ## Installation
-
+### **1. Clone the Repository**
 1. Clone the repository:
    ```sh
    git clone https://github.com/hansama0902/Programming-Design-Paradigm_Homework-1-OOP_Functional-Programming.git
    cd Programming-Design-Paradigm_Homework-1-OOP_Functional-Programming.git
    ```
-
+### **2. Install Dependencies**
 2. Install dependencies:
    ```sh
    npm install
    ```
-
+### **3. Run the Application**
 3. Run the program:
    ```sh
    node .solution/main.js
    ```
-
+### **4. View JSDoc Documentation**  
+To open the `out/index.html` in your browser:
+```bash
+npx http-server out
+```  
 ## Project Structure
 
 ```
@@ -108,7 +115,11 @@ console.log(double(5)); // Output: 10
 ```
 
 The non-higher-order function is less reusable compared to the first example.
+## Creative Addition  
 
+1. All `price` and `review_scores_rating` values that are empty are assigned a default value of `0`. This ensures they are included in searches. Initially, these listings were skipped, which caused inaccuracies. Note that when setting a minimum value, the range starts from `1`.
+2. `Total Listings Considered` includes listings where `price` and `review_scores_rating` are empty, while `Valid Listings` excludes them.
+3. `Average Price per Room` represents the average price per room, while `Average Price of All Valid Listings` represents the average price per listing. These averages skip listings where `price` is empty.
 ## License
 
 This project is licensed under the MIT License.

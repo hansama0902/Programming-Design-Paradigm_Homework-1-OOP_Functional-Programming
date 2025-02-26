@@ -11,7 +11,7 @@ const ask = (rl, question) => new Promise(resolve => rl.question(`~> ${question}
 
 /**
  * Initializes the main module for processing Airbnb listings.
- * @returns {function}  run: function(): Promise<void> - Object containing the `run` function.
+ * @returns {Function}  run: function(): Promise<void> - Object containing the `run` function.
  */
 function MainModule() {
   const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
