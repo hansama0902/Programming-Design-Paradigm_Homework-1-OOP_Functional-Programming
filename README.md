@@ -24,8 +24,8 @@ The system is built using Node.js with ES6 modules and follows functional progra
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/hansama0902/Programming-Design-Paradigm_Homework-1-OOP_Functional-Programming.git
-   cd Programming-Design-Paradigm_Homework-1-OOP_Functional-Programming.git
+   git clone https://github.com/hansama0902/Programming-Design-Paradigm_Homework-3-OOP_Functional-Programming.git
+   cd Programming-Design-Paradigm_Homework-3-OOP_Functional-Programming.git
    ```
 2. Install dependencies:
 
