@@ -45,10 +45,9 @@ The system is built using Node.js with ES6 modules and follows functional progra
 ## Project Structure
 
 ```
-solution/
-│── AirBnBDataHandler.js  Core data processing logic
-│── main.js               Command-line interface for user input
-│── test.js               Unit tests for validation
+│── solution/AirBnBDataHandler.js  Core data processing logic
+│── solution/main.js               Command-line interface for user input and output 
+│── out                   JsDoc HTML                       
 │── .gitignore            Git ignored files
 │── eslint.config.js      ESLint configuration for code quality
 │── LICENSE               Project license
