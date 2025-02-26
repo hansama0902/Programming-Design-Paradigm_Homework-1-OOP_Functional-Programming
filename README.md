@@ -138,8 +138,8 @@ This project utilized ChatGPT 4o for various stages of development:
 2. **Understanding and Implementing Method Chaining**: Initially, ChatGPT 4o was consulted to understand method chaining and adapt the code to use it. However, the initial implementation did not align with Functional Programming principles, leading to a manual restructuring of functions.
 3. **Learning About Pure Functions**: ChatGPT 4o provided examples of pure functions, which helped in understanding their properties. Using these examples, counterexamples were also constructed to illustrate impure functions.  
 4. **Understanding Readline API**: ChatGPT 4o was used to understand how the Readline API works. Using the provided examples, a basic Readline UI was implemented for user interaction.
-##Video  
-(video)[https://youtu.be/qQzs6osctW4] 
+## Video  
+[video](https://youtu.be/qQzs6osctW4) 
 ## Creative Addition
 
 1. All `price` and `review_scores_rating` values that are empty are assigned a default value of `0`. This ensures they are included in searches. Initially, these listings were skipped, which caused inaccuracies. Note that when setting a minimum value, the range starts from `1`.
