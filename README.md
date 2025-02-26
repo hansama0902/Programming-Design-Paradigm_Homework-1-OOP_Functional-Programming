@@ -136,13 +136,16 @@ This project utilized ChatGPT 4o for various stages of development:
 
 1. **Generating JSDoc Documentation**: ChatGPT 4o was used to generate JSDoc comments. However, running `node_modules/jsdoc/jsdoc.js` resulted in errors. The errors were analyzed, and the JSDoc was modified accordingly to resolve the issues.
 2. **Understanding and Implementing Method Chaining**: Initially, ChatGPT 4o was consulted to understand method chaining and adapt the code to use it. However, the initial implementation did not align with Functional Programming principles, leading to a manual restructuring of functions.
-3. **Learning About Pure Functions**: ChatGPT 4o provided examples of pure functions, which helped in understanding their properties. Using these examples, counterexamples were also constructed to illustrate impure functions.
+3. **Learning About Pure Functions**: ChatGPT 4o provided examples of pure functions, which helped in understanding their properties. Using these examples, counterexamples were also constructed to illustrate impure functions.  
+4. **Understanding Readline API**: ChatGPT 4o was used to understand how the Readline API works. Using the provided examples, a basic Readline UI was implemented for user interaction.
+
   
 ## Creative Addition
 
 1. All `price` and `review_scores_rating` values that are empty are assigned a default value of `0`. This ensures they are included in searches. Initially, these listings were skipped, which caused inaccuracies. Note that when setting a minimum value, the range starts from `1`.
 2. `Total Listings Considered` includes listings where `price` and `review_scores_rating` are empty, while `Valid Listings` excludes them.
-3. `Average Price per Room` represents the average price per room, while `Average Price of All Valid Listings` represents the average price per listing. These averages skip listings where `price` is empty.
+3. `Average Price per Room` represents the average price per room, while `Average Price of All Valid Listings` represents the average price per listing. These averages skip listings where `price` is empty.  
+4. `Enter the file path to export results (or press enter to skip): result.csv` – You can export the CSV file in this way.
 
 ## License
 
