@@ -35,10 +35,9 @@ The system is built using Node.js with ES6 modules and follows functional progra
    node .solution/main.js
    ```
 4. View JSDoc Documentation
-To open the `out/index.html` in your browser:
-```bash
-npx http-server out
-```  
+    ```sh
+    npx http-server out
+    ```  
 ## Project Structure
 
 ```
