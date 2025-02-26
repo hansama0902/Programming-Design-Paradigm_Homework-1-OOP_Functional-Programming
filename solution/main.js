@@ -1,34 +1,6 @@
 import readline from "readline";
 import { loadListings, AirBnBDataHandler } from "./AirBnBDataHandler.js";
 
-const FILE_PATH = "./data/listings.csv";
-
-/**
- * Represents the filter criteria input by the user.
- * @typedef {Object} FilterCriteria
- * @property {number|null} minPrice - Minimum price filter.
- * @property {number|null} maxPrice - Maximum price filter.
- * @property {number|null} minRooms - Minimum number of rooms filter.
- * @property {number|null} maxRooms - Maximum number of rooms filter.
- * @property {number|null} minReviewScore - Minimum review score filter.
- */
-
-/**
- * Represents computed statistics for Airbnb listings.
- * @typedef {Object} Statistics
- * @property {number} total_count - Total number of listings.
- * @property {number} count - Number of valid listings (price > 0).
- * @property {number} avgPricePerRoom - Average price per room.
- * @property {number} avgPriceValidListings - Average price of all valid listings.
- */
-
-/**
- * Represents a host's ranking based on the number of listings.
- * @typedef {Object} HostRanking
- * @property {string} host_id - The ID of the host.
- * @property {number} count - Number of listings owned by the host.
- */
-
 /**
  * Prompts the user with a question and returns their input.
  * @param {readline.Interface} rl - Readline interface instance.
@@ -39,7 +11,7 @@ const ask = (rl, question) => new Promise(resolve => rl.question(`~> ${question}
 
 /**
  * Initializes the main module for processing Airbnb listings.
- * @returns {{run: function(): Promise<void>}} Object containing the `run` function.
+ * @returns {function}  run: function(): Promise<void> - Object containing the `run` function.
  */
 function MainModule() {
   const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
@@ -50,11 +22,18 @@ function MainModule() {
    * @returns {Promise<void>} Resolves when the program completes execution.
    */
   async function run() {
-    console.log(`Loading data from ${FILE_PATH}...`);
-    
+    let filePath = await ask(rl, "Enter the CSV file path: ");
+
+    while (!filePath.trim()) {
+      console.log("Invalid input. Please provide a valid CSV file path.");
+      filePath = await ask(rl, "Enter the CSV file path: ");
+    }
+
+    console.log(`Loading data from ${filePath}...`);
+
     try {
-      // Load Airbnb listings from CSV file
-      const listings = await loadListings(FILE_PATH);
+      // Load Airbnb listings from user-provided CSV file
+      const listings = await loadListings(filePath);
       const handler = AirBnBDataHandler(listings);
 
       // Prompt user for filtering criteria
@@ -114,4 +93,5 @@ function MainModule() {
 // Initialize and run the module
 const mainModule = MainModule();
 mainModule.run();
+
 
