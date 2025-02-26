@@ -20,23 +20,21 @@ The system is built using Node.js with ES6 modules and follows functional progra
 - Command-line UI – Interact with the system via terminal
 
 ## Installation
-### **1. Clone the Repository**
 1. Clone the repository:
    ```sh
    git clone https://github.com/hansama0902/Programming-Design-Paradigm_Homework-1-OOP_Functional-Programming.git
    cd Programming-Design-Paradigm_Homework-1-OOP_Functional-Programming.git
    ```
-### **2. Install Dependencies**
 2. Install dependencies:
    ```sh
    npm install
    ```
-### **3. Run the Application**
+
 3. Run the program:
    ```sh
    node .solution/main.js
    ```
-### **4. View JSDoc Documentation**  
+4. View JSDoc Documentation
 To open the `out/index.html` in your browser:
 ```bash
 npx http-server out
