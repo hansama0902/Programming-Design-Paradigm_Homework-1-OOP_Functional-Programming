@@ -20,8 +20,8 @@ The system is built using Node.js with ES6 modules and follows functional progra
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/airbnb-data-handler.git
-   cd airbnb-data-handler
+   git clone https://github.com/hansama0902/Programming-Design-Paradigm_Homework-1-OOP_Functional-Programming.git
+   cd Programming-Design-Paradigm_Homework-1-OOP_Functional-Programming.git
    ```
 
 2. Install dependencies:
@@ -31,7 +31,7 @@ The system is built using Node.js with ES6 modules and follows functional progra
 
 3. Run the program:
    ```sh
-   node main.js
+   node .solution/main.js
    ```
 
 ## Project Structure
