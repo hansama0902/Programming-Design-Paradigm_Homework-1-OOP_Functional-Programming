@@ -126,18 +126,125 @@ function double(num) {
 console.log(double(5)); // Output: 10
 ```
 
-The non-higher-order function is less reusable compared to the first example.
-  
+The non-higher-order function is less reusable compared to the first example.  
 ## Using GenAI
 
-Describes clearly how the project was created and what tools were used to support the process. If using GenAI, describes prompts used, how the answers were debugged, and what was learned from the process.
+This project utilized **ChatGPT 4o** at various stages of development, including documentation generation, functional programming principles, debugging, and API understanding. Below are specific use cases and how GenAI contributed:
 
-This project utilized ChatGPT 4o for various stages of development:
+### 1. Generating JSDoc Documentation  
+**Prompt:**  
+*"Generate JSDoc comments for a function that filters Airbnb listings based on criteria such as price, number of rooms, and review scores."*
 
-1. **Generating JSDoc Documentation**: ChatGPT 4o was used to generate JSDoc comments. However, running `node_modules/jsdoc/jsdoc.js` resulted in errors. The errors were analyzed, and the JSDoc was modified accordingly to resolve the issues.
-2. **Understanding and Implementing Method Chaining**: Initially, ChatGPT 4o was consulted to understand method chaining and adapt the code to use it. However, the initial implementation did not align with Functional Programming principles, leading to a manual restructuring of functions.
-3. **Learning About Pure Functions**: ChatGPT 4o provided examples of pure functions, which helped in understanding their properties. Using these examples, counterexamples were also constructed to illustrate impure functions.  
-4. **Understanding Readline API**: ChatGPT 4o was used to understand how the Readline API works. Using the provided examples, a basic Readline UI was implemented for user interaction.
+**Response:**  
+```js
+/**
+ * Filters Airbnb listings based on user-defined criteria.
+ * @param {Object[]} listings - Array of Airbnb listings.
+ * @param {Object} criteria - Filtering criteria.
+ * @param {number} [criteria.minPrice] - Minimum price.
+ * @param {number} [criteria.maxPrice] - Maximum price.
+ * @param {number} [criteria.minRooms] - Minimum number of rooms.
+ * @param {number} [criteria.maxRooms] - Maximum number of rooms.
+ * @param {number} [criteria.minReviewScore] - Minimum review score.
+ * @returns {Object[]} Filtered listings.
+ */
+function filterListings(listings, criteria) { ... }
+```
+**Use:**  
+This response was integrated into the project’s JSDoc comments. However, when running `node_modules/jsdoc/jsdoc.js`, errors appeared, leading to manual adjustments in the JSDoc structure.
+
+---
+
+### 2. Understanding and Implementing Method Chaining  
+**Prompt:**  
+*"Explain method chaining and provide an example in JavaScript."*
+
+**Response:**  
+```js
+class ListingsProcessor {
+  constructor(listings) {
+    this.listings = listings;
+  }
+
+  filterByPrice(min, max) {
+    this.listings = this.listings.filter(
+      (listing) => listing.price >= min && listing.price <= max
+    );
+    return this;
+  }
+
+  sortByReviewScore() {
+    this.listings = this.listings.sort(
+      (a, b) => b.review_scores_rating - a.review_scores_rating
+    );
+    return this;
+  }
+
+  getResults() {
+    return this.listings;
+  }
+}
+```
+**Use:**  
+The response inspired the initial implementation. However, the chaining style did not fully align with **Functional Programming Principles**, so functions were restructured into pure functions instead.
+
+---
+
+### 3. Learning About Pure Functions  
+**Prompt:**  
+*"What is a pure function? Provide an example."*
+
+**Response:**  
+```js
+function computeStatistics(listings) {
+  const validListings = listings.filter((listing) => listing.price > 0);
+  const count = validListings.length;
+  const totalRoomPrice = validListings.reduce(
+    (acc, listing) => acc + listing.price / listing.accommodates,
+    0
+  );
+  const avgPricePerRoom = count ? totalRoomPrice / count : 0;
+  return { count, avgPricePerRoom };
+}
+```
+**Use:**  
+This explanation helped in structuring calculations as pure functions. Counterexamples of **impure functions** were also added to illustrate the difference.
+
+---
+
+### 4. Understanding Readline API  
+**Prompt:**  
+*"How do I use the Node.js Readline module to take user input in a command-line application?"*
+
+**Response:**  
+```js
+import readline from "readline";
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
+rl.question("Enter a minimum price: ", (minPrice) => {
+  console.log(`Filtering listings with a minimum price of ${minPrice}`);
+  rl.close();
+});
+```
+**Use:**  
+This example served as the foundation for implementing the **CLI interface**, allowing users to provide filtering criteria dynamically.
+
+---
+
+### Summary  
+
+GenAI significantly improved the project in multiple aspects:
+- **Accelerated development**: Quickly generated function templates and documentation.
+- **Debugging support**: Provided insights into fixing JSDoc-related errors.
+- **Concept learning**: Helped understand **method chaining**, **functional programming**, and **CLI implementation**.
+
+By using AI-assisted development, the project maintained clean and well-structured code while adhering to **Functional Programming Principles**.
+
+
 ## Video  
 [video](https://youtu.be/qQzs6osctW4) 
 ## Creative Addition
