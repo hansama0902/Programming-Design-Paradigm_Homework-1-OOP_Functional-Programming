@@ -57,8 +57,6 @@ The system is built using Node.js with ES6 modules and follows functional progra
 
 ## Functional Programming Principles
 
-This project follows pure functions and higher-order functions principles.
-
 ### Example: Pure Function
 
 A pure function has no side effects and always returns the same output for the same input. Below is an example from `AirBnBDataHandler.js`, which computes statistics based on listings:
