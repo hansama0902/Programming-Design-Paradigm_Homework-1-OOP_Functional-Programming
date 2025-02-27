@@ -233,18 +233,7 @@ rl.question("Enter a minimum price: ", (minPrice) => {
 **Use:**  
 This example served as the foundation for implementing the **CLI interface**, allowing users to provide filtering criteria dynamically.
 
----
-
-### Summary  
-
-GenAI significantly improved the project in multiple aspects:
-- **Accelerated development**: Quickly generated function templates and documentation.
-- **Debugging support**: Provided insights into fixing JSDoc-related errors.
-- **Concept learning**: Helped understand **method chaining**, **functional programming**, and **CLI implementation**.
-
-By using AI-assisted development, the project maintained clean and well-structured code while adhering to **Functional Programming Principles**.
-
-
+---  
 ## Video  
 [video](https://youtu.be/qQzs6osctW4) 
 ## Creative Addition
