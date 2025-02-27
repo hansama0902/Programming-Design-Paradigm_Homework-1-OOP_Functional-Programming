@@ -21,7 +21,7 @@ The system is built using Node.js with ES6 modules and follows functional progra
 - Command-line UI – Interact with the system via terminal
 
 ## Installation
-
+-Before running the program, make sure that the dependencies fs/promises, csv-parse/sync, readline, and csv-stringify/sync are installed.
 1. Clone the repository:
    ```sh
    git clone https://github.com/hansama0902/Programming-Design-Paradigm_Homework-3-OOP_Functional-Programming.git

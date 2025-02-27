@@ -1,6 +1,8 @@
 import readline from "readline";
 import { loadListings, AirBnBDataHandler } from "./AirBnBDataHandler.js";
-
+/**
+ * @module main
+ */
 /**
  * Prompts the user with a question and returns their input.
  * @param {readline.Interface} rl - Readline interface instance.
