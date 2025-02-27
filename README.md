@@ -236,6 +236,10 @@ This example served as the foundation for implementing the **CLI interface**, al
 ---  
 ## Video  
 [video](https://youtu.be/qQzs6osctW4) 
+## WHAT I'M PROUD OF
+Better understanding of Promises and async/awai and function programming && writing pure functions, higher-order functions.
+## WHAT I STRUGGLED THE MOST WITH
+Method chaining, I used console.log() to determine where the problem originated and I copied the code blocks to ChatGPT and asked if there were any issues.
 ## Creative Addition
 
 1. All `price` and `review_scores_rating` values that are empty are assigned a default value of `0`. This ensures they are included in searches. Initially, these listings were skipped, which caused inaccuracies. Note that when setting a minimum value, the range starts from `1`.
